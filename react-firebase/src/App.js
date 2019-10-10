@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-//import logo from './logo.svg';
+import DisplayData from "./components/DisplayData";
 import './App.css';
 import TeamMembers from './components/TeamMembers';
 import firebase from 'firebase';
@@ -26,6 +26,7 @@ class App extends Component {
     return (
       <div>
         <TeamMembers db={firebase}/>
+        <DisplayData db ={firebase}/>
       </div>
 
     );
